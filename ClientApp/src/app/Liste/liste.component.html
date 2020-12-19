@@ -1,0 +1,10 @@
+﻿<button (click)='hentAlleSpoersmaal()'>
+    Hent spørsmål
+    <ul>
+        <li *ngFor='let spoersmaal of alleSpoersmaal'>
+            {{spoersmaal.id}} : {{spoersmaal.spoersmaalet}}
+            {{spoersmaal.svar}}
+        </li>
+    </ul>
+</button>
+

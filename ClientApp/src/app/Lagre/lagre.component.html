@@ -1,0 +1,22 @@
+﻿<h4>Nytt spørsmål</h4>
+    Spørsmålet er : {{spoersmaal}}
+<br />
+    Navn : {{navn}}
+<br />
+    Epost : {{epost}}
+<br />
+
+    Skriv inn spørsmålet her :
+<form [formGroup]="Skjema" (ngSubmit)="onSubmit()">
+    <input type="text" class="form-control" formControlName="spoersmaal" [(ngModel)]="spoersmaal" placeholder="Spørsmål" />
+    <br />
+    Navn:
+    <input type="text" class="form-control" formControlName="navn" [(ngModel)]="navn" placeholder="Navn" />
+    <br />
+    Epost:
+    <input type="text" class="form-control" formControlName="epost" [(ngModel)]="epost" placeholder="Epost" />
+    <div *ngIf="spoersmaal.invalid" class="alert alert-danger">Eposten er ugyldig</div>
+    <br />
+    <button type="submit" class="btn btn-info btn-xs" (click)="sendInnSpoersmaal()">Send inn spørsmål</button>
+</form>
+

@@ -1,0 +1,27 @@
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+body,
+html {
+  height: 100%;
+  color: white;
+}
+
+.bg {
+  background-image: url("https://c.wallhere.com/photos/df/2e/bridge_sunset_sky_reflection_beautiful_oslo_norway_landscape-881952.jpg!d");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
